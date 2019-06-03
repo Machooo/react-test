@@ -1,0 +1,15 @@
+[{
+	"id": 1,
+	"imageName": "FLOWER-1",
+	"imageSrc": "/images/image1.png"
+},	
+{
+	"id": 2,
+	"imageName": "FLOWER-2",
+	"imageSrc": "https://cdn.theatlantic.com/assets/media/img/mt/2017/10/Pict1_Ursinia_calendulifolia/lead_720_405.jpg?mod=1533691909"
+},
+{
+	"id" : 3,
+	"imageName": "FLOWER-3",
+	"imageSrc": "https://images.unsplash.com/photo-1533467915241-eac02e856653?ixlib=rb-1.2.1&w=1000&q=80"
+}]

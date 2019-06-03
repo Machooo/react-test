@@ -1,0 +1,101 @@
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	z-index: 10;
+	transition: 300ms all linear;
+	visibility: visible;
+	opacity: 1;
+	&-inner {
+		display: block;
+		max-width: 430px;
+		max-height: 416px;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		background: #fff;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+	}
+
+	&-title {
+		font-weight: 18px;
+		font-weight: bold;
+		margin-bottom: 44px;
+	}
+
+	input {
+		width: 240px;
+		height: 60px;
+		padding: 0 20px;
+		margin-bottom: 40px;
+		border: 1px solid #000;
+	}
+	&-bottom {
+		max-width: 280px;
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&-close, 
+	&-add {
+		width: 120px;
+		height: 48px;
+		font-weight: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		border-radius: 10px;
+		background: none;
+		outline: 0;
+		cursor: pointer;
+	}
+	&-close {
+		border: 1px solid #000;
+		color: #000;
+	}
+	&-add {
+		border: 1px solid #7ed321;
+		color: #7ed321;
+	}
+}
+
+@media (max-width: 480px) {
+	.popup-inner {
+		max-width: none;
+		max-height: none;
+	}
+}
