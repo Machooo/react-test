@@ -10,10 +10,6 @@ class Image extends Component {
       width: 0,
       activeItem: undefined,
     };
-    this.handleClick = this.handleClick.bind(this);
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    this.setWrapperRef = this.setWrapperRef.bind(this);
-    this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
   componentDidMount() {

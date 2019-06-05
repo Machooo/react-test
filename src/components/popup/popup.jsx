@@ -10,9 +10,6 @@ class Popup extends Component {
       imageName: '',
       imageSrc: '',
     };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.addImage = this.addImage.bind(this);
   }
 
   addImage = (name, src) => {

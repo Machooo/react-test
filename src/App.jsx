@@ -13,10 +13,6 @@ class App extends Component {
       data: [],
       showPopup: false,
     };
-
-    this.addImage = this.addImage.bind(this);
-    this.deleteImage = this.deleteImage.bind(this);
-    this.togglePopup = this.togglePopup.bind(this);
   }
 
   componentDidMount() {
@@ -30,7 +26,7 @@ class App extends Component {
     });
   }
 
-  addImage(name, src) {
+  addImage = (name, src) => {
     const { data } = this.state;
     let id = Math.max(...data.map(o => o.id));
     const newImage = { id: (id += 1), imageName: name, imageSrc: src };
@@ -38,20 +34,20 @@ class App extends Component {
     this.setState(prevState => ({
       data: [newImage, ...prevState.data],
     }));
-  }
+  };
 
-  deleteImage(id) {
+  deleteImage = (id) => {
     this.setState(prevState => ({
       data: prevState.data.filter(el => el.id !== id),
     }));
-  }
+  };
 
-  togglePopup() {
+  togglePopup = () => {
     const { showPopup } = this.state;
     this.setState(() => ({
       showPopup: !showPopup,
     }));
-  }
+  };
 
   render() {
     const { data, showPopup } = this.state;
